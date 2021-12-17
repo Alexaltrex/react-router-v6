@@ -1,0 +1,46 @@
+.layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffebd9;
+  min-height: 100vh;
+
+  header {
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: grey;
+
+    .logo {
+      font-size: 18px;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+
+      .link {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
+
+        &_active {
+          color: red;
+        }
+
+      }
+    }
+  }
+
+  main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+
+}
